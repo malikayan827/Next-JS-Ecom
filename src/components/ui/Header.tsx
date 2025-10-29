@@ -2,6 +2,8 @@ import React from 'react'
 import Container from './Container'
 import Logo from './Logo'
 import HeaderMenu from '../HeaderMenu'
+import SearchBar from './SearchBar'
+import CartIcon from './CartIcon'
 
 const Header = () => {
   return (
@@ -10,7 +12,11 @@ const Header = () => {
        {/*logo */}
        <Logo/>
        <HeaderMenu />
-       <div>others</div>
+       <div className='w-auto flex'>
+        <SearchBar/>
+        <CartIcon/>
+
+       </div>
        
       </Container>
       </header>
